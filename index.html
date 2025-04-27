@@ -8,14 +8,31 @@
     <title>KeyKong</title>
 </head>
 <body>
+    <nav class="navbar">
+        <div class="logo">
+          <img src="icon.png" alt="Logo">
+          <h1>KeyKong</h1>
+        </div>
+
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">My Passwords</a></li>
+      </ul>
     
+      <div class="hamburger" onclick="toggleMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    </nav>
+
     <div class="boxFull"> 
 
-        <h1>Create your Strong Password</h1>
+        <h1>Create your STRONG Password</h1>
 
         <div class="passpace">
             <input type="text" name="input" id="input" placeholder="KeYK0n6!" disabled>
-            <button type="copy" alt="Copy Password" id="copy">📋</button>
+            <button type="copy" alt="Copy to Clipboard" id="copy">📋</button>
         </div>
 
         <div class="range">

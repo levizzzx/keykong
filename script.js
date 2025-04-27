@@ -27,6 +27,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     copyButton.addEventListener("click", function () {
-        navigator.clipboard.writeText(input.value); //copying the password
+        navigator.clipboard.writeText(input.value);
+        alert('Copied to clipboard!'); //copying the password
     });
 });
+
+
+function toggleMenu() {
+    const navLinks = document.querySelector('.nav-links');
+    navLinks.classList.toggle('active');
+  } // hamburguer nav for mobile
