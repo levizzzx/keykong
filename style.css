@@ -61,3 +61,43 @@ button {
     appearance: none;
     background-color: inherit;
   }
+
+  @media (max-width: 768px) {
+    .boxFull {
+        width: 50%;
+        margin-top: 15%;
+        padding: 4%;
+        border-radius: 6%;
+    }
+
+    h1 {
+        font-size: 110%;
+        margin-bottom: 12%;
+    }
+
+    .generate {
+        width: 80%;
+        height: 40px;
+        font-size: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .boxFull {
+        width: 80%;
+        margin-top: 20%;
+        padding: 6%;
+        border-radius: 8%;
+    }
+
+    h1 {
+        font-size: 120%;
+        margin-bottom: 15%;
+    }
+
+    .generate {
+        width: 90%;
+        height: 45px;
+        font-size: 100%;
+    }
+}
