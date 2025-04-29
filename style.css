@@ -140,6 +140,28 @@ button {
     transition: 0.3s;
 }
 
+.clear{
+    color: white;
+}
+
+.clear:active{
+    color: rgb(147, 147, 147);
+}
+
+.show{
+    color: white;
+    list-style-type:none;
+    padding-right: 10%;
+}
+
+p{
+    color: white;
+}
+
+a{
+    outline-style: none;
+}
+
 @media (max-width: 768px) {
     .boxFull {
         width: 50%;
@@ -198,3 +220,5 @@ h1 {
         font-size: 100%;
     }
 }
+
+

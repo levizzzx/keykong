@@ -13,8 +13,20 @@ document.addEventListener("DOMContentLoaded", function () {
             const randomIndex = Math.floor(Math.random() * characters.length); //generating random password
             password += characters[randomIndex];
         }
-        return password; //showing the final password
+
+
+    // Tentando obter senhas armazenadas no localStorage
+    let storedPasswords = JSON.parse(localStorage.getItem('passwords')) || []; // Recupera ou cria um array vazio se não houver nada
+
+    // Adicionando a nova senha ao array
+    storedPasswords.push(password);
+
+    // Salvando o array de senhas novamente no localStorage
+    localStorage.setItem('passwords', JSON.stringify(storedPasswords));
+
+    return password; // Retorna a senha gerada
     }
+
 
     range.addEventListener("input", function () {
         slider.textContent = range.value;
@@ -37,3 +49,7 @@ function toggleMenu() {
     const navLinks = document.querySelector('.nav-links');
     navLinks.classList.toggle('active');
   } // hamburguer nav for mobile
+
+
+
+  
