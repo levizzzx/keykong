@@ -3,7 +3,7 @@
 **KeyKong** is a strong password generator created as a project to practice JavaScript. It’s a simple tool that helps you generate secure, random passwords to keep your accounts safe.
 
 ## 🚀 Features
-- Generate strong, random passwords with customizable length and character sets.
+- Generate strong, random passwords with customizable length.
 
 - Clean, easy-to-use interface.
 
